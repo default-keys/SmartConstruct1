@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+
+    <!-- ✅ Link to your main stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="site-header">
+        <!-- Row 1: Logo + Name -->
+        <div class="header-top">
+            <a href="index.html" class="logo">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="35" height="35"
+                    aria-label="Smart Construct logo">
+                    <path fill="#7d4f50" d="M3 22V12h4v10H3zm7 0V8h4v14h-4zm7 0V4h4v18h-4z" />
+                </svg>
+                <span class="brand-name">Smart Construct</span>
+            </a>
+            <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+        </div>
+
+        <!-- Row 2: Nav + CTA -->
+        <nav class="nav">
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html" class="active">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <a href="contact.html" class="cta-btn">Get a Quote</a>
+        </nav>
+    </header>
+
+    <!-- About Us Section -->
+    <section class="about">
+        <div class="hero">
+            <h1>About Us</h1>
+            <p>Building Your Future with Excellence Since 2021</p>
+        </div>
+        <div class="about-section">
+            <div class="about-text">
+                <h2>Why Choose Smart Construct? Your Dream Build Starts Here!</h2>
+                <p>Since our inception in 2021, Smart Construct has been transforming spaces across Ontario, Canada,
+                    with a passion for excellence and innovation. From stunning home renovations to cutting-edge
+                    commercial projects, we’ve built a reputation for delivering top-tier results that exceed
+                    expectations.</p>
+                <h2>Unmatched Expertise in Every Project</h2>
+                <p>With a proven track record of completing residential and commercial ventures—including home
+                    renovations, legal basements, restaurants, office spaces, and retail outlets—our team brings
+                    unparalleled skill to every job. Our hands-on experience ensures your vision is crafted with
+                    precision, no matter the scale.</p>
+            </div>
+            <div class="about-image">
+                <img src="images/aboutus.jpg" alt="Construction Team">
+            </div>
+        </div>
+        <div class="about-section">
+            <div class="about-text">
+                <h2>Committed to Excellence</h2>
+                <p><strong>Satisfaction That Speaks Volumes</strong><br>Our highest satisfaction rates are more than
+                    just numbers—they’re a testament to our commitment. Every project, from cozy home makeovers to
+                    expansive commercial builds, is completed with meticulous attention to detail, earning us the trust
+                    of homeowners and businesses alike across Ontario.</p>
+                <p><strong>Serving All of Ontario, Coast to Coast</strong><br>No matter where you are in Ontario, Smart
+                    Construct is your local expert. We proudly service every corner of the province, delivering quality
+                    construction and renovation services tailored to your community’s unique needs.</p>
+                <p><strong>Your Vision, Our Promise</strong><br>At Smart Construct, we don’t just build structures—we
+                    build relationships. Established in 2021, we’ve grown by listening to our clients and turning their
+                    dreams into reality. Choose us for a partner who values quality, reliability, and your satisfaction
+                    above all.</p>
+                <a href="contact.html" class="cta-btn cta-about">Get in Touch</a>
+            </div>
+            <div class="about-image">
+                <img src="images/aboutus1.jpg" alt="Construction Team">
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-placeholder"></div>
+    <script>
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
+
+    <script src="js/script.js"></script
+</body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Smart Construct</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Slick Carousel CSS -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="header-top">
+            <a href="index.html" class="logo">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="35" height="35">
+                    <path fill="#7d4f50" d="M3 22V12h4v10H3zm7 0V8h4v14h-4zm7 0V4h4v18h-4z" />
+                </svg>
+                <span class="brand-name">Smart Construct</span>
+            </a>
+            <button class="nav-toggle">☰</button>
+        </div>
+
+        <nav class="nav">
+            <ul class="nav-list">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <a href="contact.html" class="cta-btn">Get a Quote</a>
+        </nav>
+    </header>
+
+    <!-- Hero Slider -->
+    <section class="hero-slider">
+        <div class="slides">
+            <div class="slide active" style="background-image: url('images/hero1.jpg');">
+                <div class="overlay"></div>
+                <div class="hero-content">
+                    <h1>Building Homes. Shaping Futures.</h1>
+                    <p>Residential & Commercial Construction Across Ontario.</p>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('images/hero2.jpg');">
+                <div class="overlay"></div>
+                <div class="hero-content">
+                    <h1>Quality Construction, Trusted Results.</h1>
+                    <p>Smart solutions for modern living and working spaces.</p>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('images/hero3.jpg');">
+                <div class="overlay"></div>
+                <div class="hero-content">
+                    <h1>Your Vision, Our Expertise.</h1>
+                    <p>From foundation to finishing, we build with care.</p>
+                </div>
+            </div>
+        </div>
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+    </section>
+
+    <!-- Projects -->
+    <section class="projects">
+        <h2>Our Projects</h2>
+        <div class="carousel projects-carousel">
+            <div class="carousel-item"><img src="images/project1.jpg" alt="Project 1" loading="lazy"></div>
+            <div class="carousel-item"><img src="images/project2.jpg" alt="Project 2" loading="lazy"></div>
+            <div class="carousel-item"><img src="images/project3.jpg" alt="Project 3" loading="lazy"></div>
+            <div class="carousel-item"><img src="images/project4.jpg" alt="Project 4" loading="lazy"></div>
+        </div>
+    </section>
+    
+    <!-- Lightbox for Projects -->
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-img" src="" alt="">
+        <p class="lightbox-caption"></p>
+        <button class="lightbox-prev">&#10094;</button>
+        <button class="lightbox-next">&#10095;</button>
+    </div>
+
+    <!-- Instagram -->
+    <section class="instagram">
+  <h2>Instagram <span class="insta-handle">@SmartConstruct</span></h2>
+  <div class="insta-carousel carousel-container">
+    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DDUuZQyRHos/" data-instgrm-version="14"></blockquote>
+    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DDUuZQyRHos/" data-instgrm-version="14"></blockquote>
+    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DDUuZQyRHos/" data-instgrm-version="14"></blockquote>
+  </div>
+</section>
+
+</html>
+
+
+<!-- Contact Section -->
+<section class="contact" id="contact">
+    <div class="container">
+
+        <!-- Left Column -->
+        <div class="info-column">
+            <h2>Get in Touch</h2>
+            <ul class="contact-info">
+                <li><i class="fas fa-map-marker-alt"></i> 123 Construction Lane, Ontario</li>
+                <li><i class="fas fa-envelope"></i> info@smartconstruct.com</li>
+                <li><i class="fas fa-phone"></i> Hardeep Singh +1-123-456-7890</li>
+                <li><i class="fas fa-phone"></i> Sukhwant Singh +1-123-456-7890</li>
+            </ul>
+        </div>
+        <!-- Right Column -->
+        <div class="form-column">
+            <form class="contact-form" action="https://formspree.io/f/yourformid" method="post">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required placeholder="Your Name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="Your Email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone" required placeholder="Your Phone Number">
+                </div>
+                <div class="form-group">
+                    <label for="address">Address</label>
+                    <input type="text" id="address" name="address" placeholder="Your Address">
+                </div>
+                <div class="form-group">
+                    <label for="query">Query</label>
+                    <textarea id="query" name="query" rows="5" required
+                        placeholder="Write your message here..."></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Send Message</button>
+            </form>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- Full Width Map Section -->
+<section class="map-section">
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11041516.947939675!2d-104.78520932861908!3d47.496091450023584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce05b25f5113af%3A0x70f8425629621e09!2sOntario%2C%20Canada!5e0!3m2!1sen!2sin!4v1757312195362!5m2!1sen!2sin"
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+</section>
+
+<div id="footer-placeholder"></div>
+<script>
+    fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer-placeholder').innerHTML = data;
+        });
+</script>
+
+<script async src="//www.instagram.com/embed.js"></script>
+ <!-- jQuery + Slick + Custom JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="js/script.js"></script>
+
+<script src="js/script.js"></script>
+</body>
+
+</html>
